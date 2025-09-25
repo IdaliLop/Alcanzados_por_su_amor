@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcanzados por su Amor</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/Carrucel.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <img src="img/logo.png" href="index.html" alt="Alcanzados por su Amor"> <p><b>ALCANZADOS POR SU AMOR</b></p>
+
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link">INICIO</a>
+            <a href="#" class="nav-link">NOSOTROS</a>
+            <a href="#" class="nav-link">SERVICIOS</a>
+            <a href="#" class="nav-link">VOLUNTARIADO</a>
+            <a href="#" class="nav-link">CONTACTO</a>
+        </nav>
+        <div class="social-media">
+            <a href="https://www.facebook.com/alcanzadosporsuamor/"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://www.instagram.com/alcanzadosporsuamorac/"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+    </header>
+
+    <!-- BOTÓN DONAR -->
+    <a href="#donar" class="boton-donar-fijo" title="Haz una donación">
+        <img src="img/logo2.png" alt="Donar" style="height: 80px;">
+        Dona Aquí
+    </a>
+
+    <!-- SECCIÓN INTRO -->
+    <section class="intro">
+        <p>Transformando <span>Vidas</span>, Construyendo un Futuro mejor</p>
+        <p>Ayudamos a <span>niños y adolescentes</span> a alcanzar su máximo potencial a través de la <span class="resaltar">educación y el apoyo integral.</span></p>
+    </section>
+
+    <!-- SECCIÓN QUIÉNES SOMOS -->
+    <section class="about-us">
+        <div class="about__content">
+            <h2>¿Quiénes somos?</h2>
+            <p>Alcanzados por su Amor es una organización sin fines de lucro dedicada a brindar apoyo integral a niños y adolescentes en situación de vulnerabilidad. Nuestro objetivo es proporcionarles las herramientas necesarias para que puedan alcanzar su máximo potencial y construir un futuro mejor.</p>
+            <p>Desde nuestra fundación, hemos trabajado incansablemente para ofrecer programas educativos, psicológicos y de desarrollo personal que ayuden a nuestros beneficiarios a superar las adversidades y construir un camino hacia el éxito.</p>
+            <p>Creemos firmemente en el poder transformador de la educación y el amor, y nos esforzamos por crear un entorno seguro y acogedor donde cada niño y adolescente pueda crecer, aprender y prosperar.</p>
+            <p>Si deseas unirte a nuestra causa y ayudar a transformar vidas, te invitamos a conocer más sobre nuestros programas y cómo puedes colaborar con nosotros.</p>
+            <p>¡Juntos podemos hacer la diferencia!</p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CARRUSEL -->
+    <div class="carousel-container">
+        <button class="btn prev" onclick="moveSlide(-1)">❮</button>
+        <div class="carousel" id="carousel">
+            <img src="img/img1.jpg" alt="Imagen 1">
+            <img src="img/img2.jpg" alt="Imagen 2">
+            <img src="img/img3.jpg" alt="Imagen 3">
+            <img src="img/img4.jpg" alt="Imagen 4">
+            <img src="img/img5.jpg" alt="Imagen 5">
+            <img src="img/img6.jpg" alt="Imagen 6">
+            <img src="img/img7.jpg" alt="Imagen 7">
+            <img src="img/img8.jpg" alt="Imagen 8">
+            <img src="img/img9 .jpeg" alt="Imagen 9">
+            <img src="img/img10.jpeg" alt="Imagen 10">
+            <img src="img/img11.jpeg" alt="Imagen 11">
+            <img src="img/img12.jpeg" alt="Imagen 12">
+            <img src="img/img13.jpeg" alt="Imagen 13">
+            <img src="img/img14.jpeg" alt="Imagen 14">
+            <img src="img/img16.jpeg" alt="Imagen 16">
+            <img src="img/img17.jpeg" alt="Imagen 17">
+            <img src="img/img18.jpeg" alt="Imagen 18">
+            <img src="img/img19.jpeg" alt="Imagen 19">
+            <img src="img/img20.jpeg" alt="Imagen 20">
+        </div>
+        <button class="btn next" onclick="moveSlide(1)">❯</button>
+    </div>
+
+    <!-- SECCIÓN MISIÓN Y VISIÓN -->
+    <section class="mission-vision">
+        <div class="mission">
+            <h3>MISIÓN</h3>
+            <p>Contribuir a través de la niñez en el desarrollo integral de las familias vulnerables, brindando herramientas que les lleven a <span class="resaltar">mejorar sus condiciones de vida</span>.</p>
+        </div>
+        <div class="vision">
+            <h3>VISIÓN</h3>
+            <p>Ser un organismo facilitador y <span class="resaltar">creador de oportunidades</span> para que los niños y sus familias puedan acceder a información y capacitación para <span class="resaltar">mejorar su calidad de vida</span>. Convirtiéndose en un factor de mejora para la sociedad.</p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section class="contacto">
+        <h2>¿Quieres apoyar?</h2>
+        <p>Conviértete en voluntario o donador. ¡Tu ayuda transforma vidas!</p>
+        <p>¡Déjanos tus datos aquí!</p>
+
+        <form action="#" method="post" class="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nombre">Nombre <span>*</span></label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span>*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono <span>*</span></label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+            </div>
+            <div class="form-group mensaje">
+                <label for="mensaje">Deja tu mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+            </div><br><br>
+            <div class="form-row center">
+                <button type="submit" class="btn-enviar">
+                    <i class='bx bx-paper-plane'></i> ENVIAR
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <!--SECCIÓN DONADORES-->
+    <section class="donadores" id="donar">
+        <div class="donadores-container">
+            <button class="btn prev" onclick="moveDonadorSlide(-1)">❮</button>
+            <div class="donadores-carousel" id="donadores-carousel">
+                <!-- Tarjeta de donador -->
+                <div class="donador-card">
+                    <img src="img/ifReposteria.png" alt="Donador 1">
+                    <h3>If Reposteria</h3>
+                    <p>Cada mes donan parte de su trabajo para festejar a nuestros ñiños,</p>
+                    <p>Así mismo en cada evento se hacen presentes.</p>
+                    <p>¡Gracias por su apoyo!</p>
+                    <p>Tel: 33 1065 7640</p>
+                    <a href="https://www.facebook.com/IFReposteria?locale=es_LA" target="_blank" class="contact-btn">Contacto</a>
+                </div>
+            <div class="donador-card">
+
+            </div>
+                <!-- Copia y modifica más tarjetas como esta -->
+            </div>
+            <button class="btn next" onclick="moveDonadorSlide(1)">❯</button>
+        </div>
+    </section>
+
+    <!-- SECCIÓN MAPA -->
+    <section class="mapa">
+        <h2>Encuéntranos aquí <i class='bx bx-map-pin' style='color:#4c0b5b'  ></i></h2>
+        <div class="contenedor-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.8791057002177!2d-103.27416708926698!3d20.633783980838917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b3ff85eea00d%3A0x12ca3f0f5c578b52!2sAlcanzados%20por%20Su%20Amor%20AC!5e0!3m2!1ses!2smx!4v1745380110986!5m2!1ses!2smx" width="1000" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-column">
+            <img src="img/logo2.png" alt="Logo" class="footer-logo">
+            <p class="footer-text">
+                En <b>Alcanzados por su amor</b>, sembramos amor, esperanza y educación en cada pequeño corazón.
+            </p>
+        </div>
+        <div class="footer-column">
+            <ul class="footer-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Voluntariado</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <p><strong>alcanzadosporsuamor@gmail.com</strong></p>
+            <p>Tel: 33 3142 2450</p>
+            <p>Dirección: C. Capulín 311, Lomas del Camichin, 45403 Tonalá, Jal.</p>
+            <button class="contact-button">Contáctanos</button>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navMenu = document.querySelector(".nav-menu");
+
+            menuToggle.addEventListener("click", function () {
+                navMenu.classList.toggle("active");
+            });
+        });
+    </script>
+      
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
