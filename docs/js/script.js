@@ -1,7 +1,7 @@
 // Código JavaScript para el carrusel de imágenes y donadores
 
 // ========== CARRUSEL DE IMÁGENES DESDE GOOGLE DRIVE ==========
-const DRIVE_API_URL = "https://script.google.com/macros/s/AKfycbxgUzesHuL0laRKatDdfa--4s4jt3fTmsQdZ6BJgx0ORJ3YGXlJ6rWT95dGtRysAdbtaA/exec";
+const DRIVE_API_URL = "https://script.google.com/macros/s/AKfycbxilY7G-BlORGiJH1gxmQ_vRmMZ6Ul9-2Z8cns-_pw0L1DvPR5D18Oa_sSQyqva_wI8/exec";
 
 let currentIndex = 0;
 

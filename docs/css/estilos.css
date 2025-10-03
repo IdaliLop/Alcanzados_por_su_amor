@@ -371,7 +371,22 @@ textarea {
     transform: scale(1.05);
 }
 
-/* ----------------- SECCIÓN DE CAROUSEL ALCANZADOS ----------------- */
+/* ========== ESTILOS ADICIONALES PARA LA SECCIÓN DE CARRUSEL ========== */
+
+.alcanzados-section {
+    padding: 40px 20px;
+    background-color: #f9f1f1;
+}
+
+.alcanzados-section h2 {
+    text-align: center;
+    color: #451f55;
+    margin: 20px 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Asegura que el carrusel tenga el comportamiento correcto */
 .carousel-container {
     position: relative;
     width: 90%;
@@ -380,6 +395,7 @@ textarea {
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
 }
 
 .carousel {
@@ -395,6 +411,13 @@ textarea {
     object-fit: cover;
     border-radius: 8px;
     cursor: pointer;
+    flex-shrink: 0;
+}
+
+.carousel img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .btn.prev,
@@ -402,7 +425,7 @@ textarea {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     font-size: 24px;
     border: none;
@@ -410,6 +433,7 @@ textarea {
     cursor: pointer;
     z-index: 10;
     border-radius: 50%;
+    transition: background-color 0.3s ease;
 }
 
 .btn.prev {
@@ -421,7 +445,56 @@ textarea {
 }
 
 .btn:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Responsive para el carrusel */
+@media (max-width: 768px) {
+    .alcanzados-section h2 {
+        font-size: 24px;
+    }
+
+    .carousel-container {
+        width: 95%;
+    }
+
+    .carousel img {
+        width: 200px;
+        height: 150px;
+    }
+    
+    .btn.prev,
+    .btn.next {
+        padding: 8px 12px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .alcanzados-section {
+        padding: 20px 10px;
+    }
+
+    .alcanzados-section h2 {
+        font-size: 20px;
+    }
+
+    .carousel-container {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .carousel img {
+        width: 150px;
+        height: 120px;
+        margin-right: 5px;
+    }
+    
+    .btn.prev,
+    .btn.next {
+        padding: 6px 10px;
+        font-size: 18px;
+    }
 }
 
 /* ----------------- SECCIÓN DE CAROUSEL DONADORES ----------------- */
